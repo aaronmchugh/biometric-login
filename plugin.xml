@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="biometric-login" version="1.0">
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" id="biometric-login" version="1.0">
 
     <name>Biometric Login</name>
     <description>A plugin for biometric login</description>
@@ -14,12 +14,12 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="BiometricLogin">
-                <param name="android-package" value="com.example.BiometricLogin" />
+                <param name="android-package" value="BiometricLogin" />
                 <param name="onload" value="true" />
             </feature>
         </config-file>
         
-        <source-file src="src/android/com/example/BiometricLogin.java" target-dir="src/com/example" />
+        <source-file src="src/android/BiometricLogin.java" target-dir="src/android" />
     </platform>
 
     <!-- iOS -->
