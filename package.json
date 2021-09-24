@@ -2,7 +2,7 @@
   "name": "biometric-login",
   "version": "1.0.0",
   "description": "A plugin for biometric login",
-  "main": "index.js",
+  "main": "plugin.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
