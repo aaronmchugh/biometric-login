@@ -12,6 +12,7 @@ import org.apache.cordova.PluginResult;
 import org.apache.cordova.LOG;
 import org.json.JSONArray;
 import org.json.JSONException;
+import android.util.Log;
 
 import javax.security.auth.callback.Callback;
 
@@ -26,11 +27,11 @@ public class BiometricLogin extends CordovaPlugin {
 
     public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
         if (action.equals("functionOne")) {
-            Log.d(TAG, arg1, arg2);
+            Log.d(args);
         } else if (action.equals("functionTwo")) {
-            Log.d(TAG, arg1, arg2);
+            Log.d(args);
         } else if (action.equals("functionTwo")) {
-            Log.d(TAG, arg1, arg2);
+            Log.d(args);
         }
         return true;
     }
