@@ -1,4 +1,4 @@
-public class BiometricLogin extends CordvoaPlugin {
+public class BiometricLogin extends CordovaPlugin {
     private static final String TAG = "BiometricLogin";
 
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
