@@ -27,11 +27,11 @@ public class BiometricLogin extends CordovaPlugin {
 
     public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
         if (action.equals("functionOne")) {
-            Log.d(args);
+            System.out.println(args);
         } else if (action.equals("functionTwo")) {
-            Log.d(args);
+            System.out.println(args);
         } else if (action.equals("functionTwo")) {
-            Log.d(args);
+            System.out.println(args);
         }
         return true;
     }
