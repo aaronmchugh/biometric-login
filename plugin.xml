@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="biometric-login" version="1.0">
+
+    <name>Biometric Login</name>
+    <description>A plugin for biometric login</description>
+    <license>ISC</license>
+
+
+    <js-module src="www/plugin.js" name="BiometricLogin">
+        <clobbers target="BiometricLogin" />
+    </js-module>
+
+    <!-- Android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="BiometricLogin">
+                <param name="android-package" value="com.example.BiometricLogin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/com/example/BiometricLogin.java" target-dir="src/com/example" />
+    </platform>
+
+    <!-- iOS -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="FileOpener2">
+                <param name="ios-package" value="BiometricLogin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/BiometricLogin.m" />
+        <header-file src="src/ios/BiometricLogin.h" />
+    </platform>
+
+</plugin>

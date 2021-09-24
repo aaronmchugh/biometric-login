@@ -1,0 +1,19 @@
+{
+  "name": "biometric-login",
+  "version": "1.0.0",
+  "description": "A plugin for biometric login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaronmchugh/biometric-login.git"
+  },
+  "author": "Aaron McHugh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aaronmchugh/biometric-login/issues"
+  },
+  "homepage": "https://github.com/aaronmchugh/biometric-login#readme"
+}
