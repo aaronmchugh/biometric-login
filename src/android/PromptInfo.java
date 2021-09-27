@@ -1,3 +1,5 @@
+package de.niklasmerz.cordova.biometric;
+
 import android.os.Bundle;
 
 import org.json.JSONArray;

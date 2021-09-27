@@ -1,3 +1,5 @@
+package de.niklasmerz.cordova.biometric;
+
 import android.app.Activity;
 import android.app.KeyguardManager;
 import android.content.Intent;

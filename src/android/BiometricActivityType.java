@@ -1,3 +1,5 @@
+package de.niklasmerz.cordova.biometric;
+
 public enum BiometricActivityType {
     JUST_AUTHENTICATE(1),
     REGISTER_SECRET(2),

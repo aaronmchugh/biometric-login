@@ -1,3 +1,5 @@
+package de.niklasmerz.cordova.biometric;
+
 public enum PluginError {
 
     BIOMETRIC_UNKNOWN_ERROR(-100),

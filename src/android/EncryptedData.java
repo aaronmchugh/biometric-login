@@ -1,3 +1,5 @@
+package de.niklasmerz.cordova.biometric;
+
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;

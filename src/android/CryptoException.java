@@ -1,3 +1,5 @@
+package de.niklasmerz.cordova.biometric;
+
 class CryptoException extends Exception {
     private PluginError error;
 
