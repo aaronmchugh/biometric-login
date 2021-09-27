@@ -18,9 +18,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Fingerprint extends CordovaPlugin {
+public class BiometricLogin extends CordovaPlugin {
 
-    private static final String TAG = "Fingerprint";
+    private static final String TAG = "BiometricLogin";
     private static final int REQUEST_CODE_BIOMETRIC = 1;
 
     private CallbackContext mCallbackContext = null;
@@ -28,7 +28,7 @@ public class Fingerprint extends CordovaPlugin {
 
     public void initialize(CordovaInterface cordova, CordovaWebView webView) {
         super.initialize(cordova, webView);
-        Log.v(TAG, "Init Fingerprint");
+        Log.v(TAG, "Init BiometricLogin");
         mPromptInfoBuilder = new PromptInfo.Builder(
             this.getApplicationLabel(cordova.getActivity())
         );
@@ -37,7 +37,7 @@ public class Fingerprint extends CordovaPlugin {
     public boolean execute(final String action, JSONArray args, CallbackContext callbackContext) {
 
         this.mCallbackContext = callbackContext;
-        Log.v(TAG, "Fingerprint action: " + action);
+        Log.v(TAG, "BiometricLogin action: " + action);
 
         if ("authenticate".equals(action)) {
             executeAuthenticate(args);
@@ -156,7 +156,7 @@ public class Fingerprint extends CordovaPlugin {
             PluginResult result = new PluginResult(PluginResult.Status.ERROR, resultJson);
             result.setKeepCallback(true);
             cordova.getActivity().runOnUiThread(() ->
-                    Fingerprint.this.mCallbackContext.sendPluginResult(result));
+                    BiometricLogin.this.mCallbackContext.sendPluginResult(result));
         } catch (JSONException e) {
             Log.e(TAG, e.getMessage(), e);
         }
