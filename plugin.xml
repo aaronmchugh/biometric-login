@@ -56,7 +56,7 @@
     <source-file src="src/android/PromptInfo.java" target-dir="src/aaronmchugh/cordova/biometric"/>
     <source-file src="src/android/BiometricActivity.java" target-dir="src/aaronmchugh/cordova/biometric"/>
     <source-file src="src/android/BiometricActivityType.java" target-dir="src/aaronmchugh/cordova/biometric"/>
-    <source-file src="src/android/Fingerprint.java" target-dir="src/aaronmchugh/cordova/biometric"/>
+    <source-file src="src/android/BiometricLogin.java" target-dir="src/aaronmchugh/cordova/biometric"/>
     <source-file src="src/android/PluginError.java" target-dir="src/aaronmchugh/cordova/biometric"/>
     <source-file src="src/android/Args.java" target-dir="src/aaronmchugh/cordova/biometric"/>
     <source-file src="src/android/CryptographyManager.java" target-dir="src/aaronmchugh/cordova/biometric"/>
