@@ -6,7 +6,7 @@
     <license>ISC</license>
 
 
-    <js-module src="www/plugin.js" name="BiometricLogin">
+    <js-module src="www/BiometricLogin.js" name="BiometricLogin">
         <clobbers target="BiometricLogin" />
     </js-module>
 
