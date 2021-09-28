@@ -3,17 +3,21 @@ var exec = require('cordova/exec');
 
 var PLUGIN_NAME = 'BiometricLogin';
 
-var BiometricLogin = {
-    // functionOne: function(arg1, arg2, cb) {
-    //     exec(cb, null, PLUGIN_NAME, 'functionOne' [arg1,arg2]);
-    // },
-    // functionTwo: function(arg1, arg2, cb) {
-    //     exec(cb, null, PLUGIN_NAME, 'functionTwo' [arg1,arg2]);
-    // },
-    // functionThree: function(arg1, arg2, cb) {
-    //     exec(cb, null, PLUGIN_NAME, 'functionThree' [arg1,arg2]);
-    // },
-};
+class BiometricLogin {
+  constructor() {}
+  show(params, successCallback, errorCallback) {
+    exec(successCallback, errorCallback, PLUGIN_NAME, "authenticate", [params]);
+  }
+  isAvailable(successCallback, errorCallback, optionalParams) {
+    exec(successCallback, errorCallback, PLUGIN_NAME, "isAvailable", [optionalParams]);
+  }
+  registerBiometricSecret(params, successCallback, errorCallback) {
+    exec(successCallback, errorCallback, PLUGIN_NAME, "registerBiometricSecret", [params]);
+  }
+  loadBiometricSecret(params, successCallback, errorCallback) {
+    exec(successCallback, errorCallback, PLUGIN_NAME, "loadBiometricSecret", [params]);
+  }
+}
 
 // Plugin Errors
 BiometricLogin.prototype.BIOMETRIC_UNKNOWN_ERROR = -100;
@@ -36,44 +40,8 @@ BiometricLogin.prototype.BIOMETRIC_TYPE_FINGERPRINT = "finger";
 BiometricLogin.prototype.BIOMETRIC_TYPE_FACE = "face";
 BiometricLogin.prototype.BIOMETRIC_TYPE_COMMON = "biometric";
 
-BiometricLogin.prototype.show = function (params, successCallback, errorCallback) {
-  exec(
-    successCallback,
-    errorCallback,
-    PLUGIN_NAME,
-    "authenticate",
-    [params]
-  );
-};
 
-BiometricLogin.prototype.isAvailable = function (successCallback, errorCallback, optionalParams) {
-  exec(
-    successCallback,
-    errorCallback,
-    PLUGIN_NAME,
-    "isAvailable",
-    [optionalParams]
-  );
-};
 
-BiometricLogin.prototype.registerBiometricSecret = function (params, successCallback, errorCallback) {
-  exec(
-      successCallback,
-      errorCallback,
-      PLUGIN_NAME,
-      "registerBiometricSecret",
-      [params]
-  );
-};
 
-BiometricLogin.prototype.loadBiometricSecret = function (params, successCallback, errorCallback) {
-  exec(
-      successCallback,
-      errorCallback,
-      PLUGIN_NAME,
-      "loadBiometricSecret",
-      [params]
-  );
-};
 
 module.exports = new BiometricLogin();
