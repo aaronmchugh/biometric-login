@@ -1,4 +1,4 @@
-package aaronmchugh.cordova.biometric;
+package com.example;
 
 public enum BiometricActivityType {
     JUST_AUTHENTICATE(1),

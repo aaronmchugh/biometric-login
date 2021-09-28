@@ -38,7 +38,7 @@
 
     <config-file target="res/xml/config.xml" parent="/*">
       <feature name="BiometricLogin">
-        <param name="android-package" value="aaronmchugh.cordova.biometric.BiometricLogin"/>
+        <param name="android-package" value="com.example.BiometricLogin"/>
       </feature>
     </config-file>
     
@@ -48,7 +48,7 @@
     </config-file>
 
     <config-file target="AndroidManifest.xml" parent="application">
-      <activity android:name="aaronmchugh.cordova.biometric.BiometricActivity" android:theme="@style/TransparentTheme" android:exported="true"/>
+      <activity android:name="com.example.BiometricActivity" android:theme="@style/TransparentTheme" android:exported="true"/>
     </config-file>
     
     <resource-file src="src/android/res/biometric_activity.xml" target="res/layout/biometric_activity.xml"/>

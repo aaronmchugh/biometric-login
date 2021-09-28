@@ -1,4 +1,4 @@
-package aaronmchugh.cordova.biometric;
+package com.example;
 
 import android.os.Bundle;
 

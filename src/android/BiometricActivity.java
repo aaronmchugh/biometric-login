@@ -1,4 +1,4 @@
-package aaronmchugh.cordova.biometric;
+package com.example;
 
 import android.app.Activity;
 import android.app.KeyguardManager;
