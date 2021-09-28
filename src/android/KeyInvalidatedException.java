@@ -1,4 +1,4 @@
-package de.niklasmerz.cordova.biometric;
+package aaronmchugh.cordova.biometric;
 
 class KeyInvalidatedException extends CryptoException {
     KeyInvalidatedException() {
