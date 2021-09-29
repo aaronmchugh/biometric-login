@@ -1,4 +1,4 @@
-package com.example;
+package aaronmchugh.cordova.biometric;
 
 class CryptoException extends Exception {
     private PluginError error;

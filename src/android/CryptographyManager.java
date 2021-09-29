@@ -1,4 +1,4 @@
-package com.example;
+package aaronmchugh.cordova.biometric;
 
 import android.content.Context;
 

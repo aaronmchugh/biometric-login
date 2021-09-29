@@ -1,4 +1,4 @@
-package com.example;
+package aaronmchugh.cordova.biometric;
 
 class KeyInvalidatedException extends CryptoException {
     KeyInvalidatedException() {
